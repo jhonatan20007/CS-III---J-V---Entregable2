@@ -9,7 +9,7 @@ class HolaMundo extends HTMLElement {
         this.innerHTML = `<div class="BordeBanner">
         <nav class="navbar" style="background-color: transparent;"> 
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="index.html">
                 <img src="fonts/SVG/earth.svg" width="30" height="24" class="d-inline-block align-text-top">
                 T I C K E T S  &nbsp B O L E T A S
               </a>
@@ -23,7 +23,7 @@ class HolaMundo extends HTMLElement {
           <div class="banner" >
             <div class="inner-banner" style="background-color: #98DFEA;">
               <p>Our Summer 2017 Sale has finally arrived.</p>
-              <a href="#"><button>GRAB THE DEALS</button></a>
+              <a href="#"><button>TAKE IT</button></a>
             </div>
           </div>
           <br>
