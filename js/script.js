@@ -1,23 +1,25 @@
 
-
+var i =0;
 $(function () {
   $("#btn1").click(function (e) {
- 
 
+  
+  
   });
-  for (let i = 0; i < 5; i++) {
-    llenarTable();
+  let tipo = ["1", "2","3"];
+  let valores = ["35000", "75000","18000"];
+  for (let i = 0; i < 3; i++) {
+    llenarTable(tipo,valores);
   }
 
-  cargar_provincias();
 });
 
-function llenarTable() {
+function llenarTable(tipo,valores) {
   var row = $("<tr />");
   $("#table tbody").append(row);
   row.append($("<td>" + "" + "</td>"));
-  row.append($("<td>" + "hola" + "</td>"));
-  row.append($("<td>" + "hola" + "</td>"));
+  row.append($("<td>" + tipo[i] + "</td>"));
+  row.append($("<td>" + valores[i] + "</td>"));
   row.append(
     $(
       "<td>" +
@@ -30,6 +32,7 @@ function llenarTable() {
         "</td>"
     )
   );
+  i++;
 }
 
 // funcion para Cargar Provincias al campo <select>
