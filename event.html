@@ -7,6 +7,8 @@
     <title>Document</title>
     <script src="js/navbarbanner.js"></script>
     <link rel="stylesheet" href="css/template.css" />
+    <link rel="stylesheet" href="fonts/style.css" />
+    <link rel="stylesheet" href="css/modal.css">
     <script src="js/footer.js"></script>
 
     <link
@@ -43,21 +45,21 @@
             </div>
           </div>
           <br />
-          <div class="card" style="width: 24rem">
+          <div class="card" style="width: 24rem; height: 15rem">
             <img
               class="card-img-top"
               src="img/parque de diversiones.jpg"
               alt="Card image cap"
             />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
-                Some quick example text to build on the card title and make up
-                the bulk of the card's content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+              <!-- <h5 class="card-title">Card title</h5> -->
+              <!-- <p class="card-text">
+                Some quick example 
+              </p> -->
+              <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
           </div>
+          <br />
         </div>
       </div>
     </div>
@@ -94,6 +96,34 @@
               </tr> -->
             </tbody>
           </table>
+
+          <br />
+
+          <div class="row">
+            <div style="text-align: end" class="col-sm-9">
+              <label>Valor:</label>
+              <br />
+              <br />
+              <label>IVA:</label>
+              <br />
+              <br />
+              <label>Total a pagar:</label>
+            </div>
+            <div class="col-sm-3">
+              <h6 id="valor"></h6>
+              <br />
+              <h6 id="iva"></h6>
+              <br />
+              <h6 id="total"></h6>
+            </div>
+          </div>
+
+          <div class="container text-center">
+            <div class="row">
+              <div class="col-sm-10"></div>
+              <div class="col-sm-2"><a href="#" id="btnpagar" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">Pagar</a></div>
+           </div>
+          </div>
         </div>
         <div class="col-sm-4">
           <br />
@@ -115,8 +145,16 @@
         </div>
       </div>
     </div>
-    <br>
+    <br />
+
+  
     <footer-component></footer-component>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>
   </body>
